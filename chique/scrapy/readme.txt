@@ -1,0 +1,1 @@
+based on scrapy 1.0.3

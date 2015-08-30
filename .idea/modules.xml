@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../chique/.idea/chique.iml" filepath="$PROJECT_DIR$/../chique/.idea/chique.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/cola-master/.idea/cola-master.iml" filepath="$USER_HOME$/Downloads/cola-master/.idea/cola-master.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/p2p_scrapy/.idea/p2p_scrapy.iml" filepath="$USER_HOME$/Downloads/p2p_scrapy/.idea/p2p_scrapy.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/scrapy-cluster-master/.idea/scrapy-cluster-master.iml" filepath="$USER_HOME$/Downloads/scrapy-cluster-master/.idea/scrapy-cluster-master.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/scrapy-master/.idea/scrapy-master.iml" filepath="$USER_HOME$/Downloads/scrapy-master/.idea/scrapy-master.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/scrapyd-master/.idea/scrapyd-master.iml" filepath="$USER_HOME$/Downloads/scrapyd-master/.idea/scrapyd-master.iml" />
+    </modules>
+  </component>
+</project>
