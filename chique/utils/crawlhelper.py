@@ -29,7 +29,8 @@ def convert2md5(string):
 
 
 def create_mysql_connection():
-    connection = MySQLdb.connect(host=DB_HOST, user=DB_USER, passwd=DB_PASSWD, db=DB_NAME, charset=DB_CHARSET, cursorclass=MySQLdb.cursors.DictCursor)
+    connection = MySQLdb.connect(host=DB_HOST, user=DB_USER, passwd=DB_PASSWD,
+                                 db=DB_NAME, charset=DB_CHARSET, cursorclass=MySQLdb.cursors.DictCursor)
     return connection
 
 
@@ -95,8 +96,8 @@ def into_link_new(database, dict_data):
 def into_detail(database, dict_data):
     # 存储detail
     try:
-        keys = ['link_hash', 'product_url', 'product_name', 'product_code', 'product_description', 'investment_amount','investment_amount_min', 'investment_amount_max', 'investment_period', 'annualized_return_rate_min','annualized_return_rate_max', 'safeguard_mode', 'safeguard_mode_text', 'publish_period', 'start_date','end_date', 'remain_amount', 'remain_time', 'progress', 'promotion', 'created_at', 'created_by', 'updated_at', 'updated_by','failed_times', 'invest_num', 'product_status', 'version']
-        sql = 'insert into detailbase(' + ','.join(keys) + ') values(' + ','.join(['"%s"'] * len(keys)) + ');'
+        keys = ['link_hash', 'product_url', 'product_name', 'product_code', 'product_description', 'investment_amount','investment_amount_min', 'investment_amount_max', 'investment_period', 'annualized_return_rate_min','annualized_return_rate_max', 'safeguard_mode', 'safeguard_mode_text', 'publish_period', 'start_date','end_date', 'remain_amount', 'remain_time', 'progress', 'promotion', 'created_at', 'created_by', 'updated_at', 'updated_by','failed_times', 'invest_num', 'product_status']
+        sql = 'insert into detailbaseflow(' + ','.join(keys) + ') values(' + ','.join(['"%s"'] * len(keys)) + ');'
         sql_string = sql % tuple([dict_data[item] for item in keys])
         print '[into_detail_sql]:', sql_string
         execute_sql(database, sql_string)
