@@ -1,19 +1,19 @@
-Wed, 19 Aug 2015 22:30:06 client.py[line:113] DEBUG Request 1: []
-Wed, 19 Aug 2015 22:30:06 conn.py[line:205] DEBUG Reinitializing socket connection for 120.25.216.93:9092
-Wed, 19 Aug 2015 22:30:06 conn.py[line:130] DEBUG About to send 30 bytes to Kafka, request 1
-Wed, 19 Aug 2015 22:30:06 conn.py[line:152] DEBUG Reading response 1 from Kafka
-Wed, 19 Aug 2015 22:30:06 conn.py[line:88] DEBUG About to read 4 bytes from Kafka
-Wed, 19 Aug 2015 22:30:06 conn.py[line:110] DEBUG Read 4/4 bytes from Kafka
-Wed, 19 Aug 2015 22:30:06 conn.py[line:88] DEBUG About to read 367 bytes from Kafka
-Wed, 19 Aug 2015 22:30:06 conn.py[line:110] DEBUG Read 367/367 bytes from Kafka
-Wed, 19 Aug 2015 22:30:06 client.py[line:123] DEBUG Response 1: MetadataResponse(brokers=[BrokerMetadata(nodeId=0, host='120.25.216.93', port=9092)], topics=[TopicMetadata(topic='demo.outbound_firehose', error=0, partitions=[PartitionMetadata(topic='demo.outbound_firehose', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='demo.inbound_actions', error=0, partitions=[PartitionMetadata(topic='demo.inbound_actions', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='F', error=0, partitions=[PartitionMetadata(topic='F', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='commands', error=0, partitions=[PartitionMetadata(topic='commands', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='demo.incoming_urls', error=0, partitions=[PartitionMetadata(topic='demo.incoming_urls', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='demo.crawled_firehose', error=0, partitions=[PartitionMetadata(topic='demo.crawled_firehose', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='urls', error=0, partitions=[PartitionMetadata(topic='urls', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)])])
-Wed, 19 Aug 2015 22:30:06 client.py[line:366] INFO Updating broker metadata: [BrokerMetadata(nodeId=0, host='120.25.216.93', port=9092)]
-Wed, 19 Aug 2015 22:30:06 client.py[line:367] INFO Updating topic metadata: [TopicMetadata(topic='demo.outbound_firehose', error=0, partitions=[PartitionMetadata(topic='demo.outbound_firehose', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='demo.inbound_actions', error=0, partitions=[PartitionMetadata(topic='demo.inbound_actions', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='F', error=0, partitions=[PartitionMetadata(topic='F', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='commands', error=0, partitions=[PartitionMetadata(topic='commands', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='demo.incoming_urls', error=0, partitions=[PartitionMetadata(topic='demo.incoming_urls', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='demo.crawled_firehose', error=0, partitions=[PartitionMetadata(topic='demo.crawled_firehose', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)]), TopicMetadata(topic='urls', error=0, partitions=[PartitionMetadata(topic='urls', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)])]
-Wed, 19 Aug 2015 22:30:06 client.py[line:177] DEBUG Request 2 to BrokerMetadata(nodeId=0, host='120.25.216.93', port=9092): [ProduceRequest(topic='commands', partition=0, messages=[Message(magic=0, attributes=0, key=None, value='link_start')])]
-Wed, 19 Aug 2015 22:30:06 conn.py[line:130] DEBUG About to send 94 bytes to Kafka, request 2
-Wed, 19 Aug 2015 22:30:06 conn.py[line:152] DEBUG Reading response 2 from Kafka
-Wed, 19 Aug 2015 22:30:06 conn.py[line:88] DEBUG About to read 4 bytes from Kafka
-Wed, 19 Aug 2015 22:30:06 conn.py[line:110] DEBUG Read 4/4 bytes from Kafka
-Wed, 19 Aug 2015 22:30:06 conn.py[line:88] DEBUG About to read 36 bytes from Kafka
-Wed, 19 Aug 2015 22:30:06 conn.py[line:110] DEBUG Read 36/36 bytes from Kafka
-Wed, 19 Aug 2015 22:30:06 client.py[line:228] DEBUG Response 2: [ProduceResponse(topic='commands', partition=0, error=0, offset=62)]
+Fri, 04 Sep 2015 14:25:51 client.py[line:113] DEBUG Request 1: []
+Fri, 04 Sep 2015 14:25:51 conn.py[line:205] DEBUG Reinitializing socket connection for 120.25.216.93:9092
+Fri, 04 Sep 2015 14:25:51 conn.py[line:130] DEBUG About to send 30 bytes to Kafka, request 1
+Fri, 04 Sep 2015 14:25:51 conn.py[line:152] DEBUG Reading response 1 from Kafka
+Fri, 04 Sep 2015 14:25:51 conn.py[line:88] DEBUG About to read 4 bytes from Kafka
+Fri, 04 Sep 2015 14:25:52 conn.py[line:110] DEBUG Read 4/4 bytes from Kafka
+Fri, 04 Sep 2015 14:25:52 conn.py[line:88] DEBUG About to read 77 bytes from Kafka
+Fri, 04 Sep 2015 14:25:52 conn.py[line:110] DEBUG Read 77/77 bytes from Kafka
+Fri, 04 Sep 2015 14:25:52 client.py[line:123] DEBUG Response 1: MetadataResponse(brokers=[BrokerMetadata(nodeId=0, host='120.25.216.93', port=9092)], topics=[TopicMetadata(topic='commands', error=0, partitions=[PartitionMetadata(topic='commands', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)])])
+Fri, 04 Sep 2015 14:25:52 client.py[line:366] INFO Updating broker metadata: [BrokerMetadata(nodeId=0, host='120.25.216.93', port=9092)]
+Fri, 04 Sep 2015 14:25:52 client.py[line:367] INFO Updating topic metadata: [TopicMetadata(topic='commands', error=0, partitions=[PartitionMetadata(topic='commands', partition=0, leader=0, replicas=(0,), isr=(0,), error=0)])]
+Fri, 04 Sep 2015 14:25:52 client.py[line:177] DEBUG Request 2 to BrokerMetadata(nodeId=0, host='120.25.216.93', port=9092): [ProduceRequest(topic='commands', partition=0, messages=[Message(magic=0, attributes=0, key=None, value='link_start')])]
+Fri, 04 Sep 2015 14:25:52 conn.py[line:130] DEBUG About to send 94 bytes to Kafka, request 2
+Fri, 04 Sep 2015 14:25:52 conn.py[line:152] DEBUG Reading response 2 from Kafka
+Fri, 04 Sep 2015 14:25:52 conn.py[line:88] DEBUG About to read 4 bytes from Kafka
+Fri, 04 Sep 2015 14:25:52 conn.py[line:110] DEBUG Read 4/4 bytes from Kafka
+Fri, 04 Sep 2015 14:25:52 conn.py[line:88] DEBUG About to read 36 bytes from Kafka
+Fri, 04 Sep 2015 14:25:52 conn.py[line:110] DEBUG Read 36/36 bytes from Kafka
+Fri, 04 Sep 2015 14:25:52 client.py[line:228] DEBUG Response 2: [ProduceResponse(topic='commands', partition=0, error=0, offset=5)]

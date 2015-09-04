@@ -84,7 +84,7 @@ def into_link(database, dict_data):
 def into_link_new(database, dict_data):
     # 存储url
     try:
-        keys = ['link_hash', 'link_level', 'product_line_id', 'platform_id', 'url', 'product_code', 'crawl_status','from_url', 'created_at', 'created_by', 'updated_at', 'updated_by', 'spider_id', 'failed_times', 'version', 'cookies', 'headers', 'postdata']
+        keys = ['link_hash', 'link_level', 'product_line_id', 'platform_id', 'url', 'product_code','from_url', 'created_at', 'created_by', 'updated_at', 'updated_by', 'spider_id', 'cookies', 'headers', 'postdata']
         sql = 'insert into linkbase(' + ','.join(keys) + ') values(' + ','.join(['"%s"'] * len(keys)) + ');'
         sql_string = sql % tuple([dict_data[item] for item in keys])
         print '[into_link_sql]:', sql_string
@@ -96,7 +96,7 @@ def into_link_new(database, dict_data):
 def into_detail(database, dict_data):
     # 存储detail
     try:
-        keys = ['link_hash', 'product_url', 'product_name', 'product_code', 'product_description', 'investment_amount','investment_amount_min', 'investment_amount_max', 'investment_period', 'annualized_return_rate_min','annualized_return_rate_max', 'safeguard_mode', 'safeguard_mode_text', 'publish_period', 'start_date','end_date', 'remain_amount', 'remain_time', 'progress', 'promotion', 'created_at', 'created_by', 'updated_at', 'updated_by','failed_times', 'invest_num', 'product_status']
+        keys = ['link_hash', 'product_url', 'product_name', 'product_code', 'product_description', 'investment_amount','investment_amount_min', 'investment_amount_max', 'investment_period', 'annualized_return_rate_min','annualized_return_rate_max', 'safeguard_mode', 'safeguard_mode_text', 'publish_period', 'start_date','end_date', 'remain_amount', 'remain_time', 'progress', 'promotion', 'created_at', 'created_by', 'updated_at', 'updated_by','invest_num', 'product_status']
         sql = 'insert into detailbaseflow(' + ','.join(keys) + ') values(' + ','.join(['"%s"'] * len(keys)) + ');'
         sql_string = sql % tuple([dict_data[item] for item in keys])
         print '[into_detail_sql]:', sql_string

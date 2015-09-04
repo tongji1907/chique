@@ -41,7 +41,14 @@ class RedisMixin(object):
             #print t['cookies']
             print t['link_hash']
             print t['product_code']
-            return Request(t['url'],cookies=eval(t['cookies']),meta={'product_code':t['product_code'], 'link_hash': t['link_hash']},dont_filter=True)
+            cookie = ''
+            if t['cookies'] is not None:
+                print t['cookies']
+                if t['cookies'] != '':
+                    cookie = eval((t['cookies']))
+
+
+            return Request(t['url'],cookies=cookie,meta={'product_code':t['product_code'], 'link_hash': t['link_hash']},dont_filter=True)
             #return self.make_requests_from_url(t['url'])
 
     def schedule_next_request(self):

@@ -23,6 +23,7 @@ result = engine.execute(s)
 
 for url in result:
     m = pickle.dumps(url)
-    server.lpush("jingdong_detail:start_urls",m)
+    print url['spider_id']
+    server.lpush(url['spider_id']+":start_urls",m)
 
 

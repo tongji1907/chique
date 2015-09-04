@@ -86,8 +86,8 @@ class JDDetailSpider(RedisSpider):
         i['created_by'] = 'autoload'
         i['updated_at'] = now()
         i['updated_by'] = 'autoload'
-        i['failed_times'] = 0
+        #i['failed_times'] = 0
         i['invest_num'] = get_content(hxs.xpath(self._xpath_num).extract())
         i['product_status'] = '0'
-        i['version'] = 0
+        #i['version'] = 0
         yield i
