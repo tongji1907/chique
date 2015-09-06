@@ -3,7 +3,7 @@
 from scrapy import Spider
 from scrapy.selector import Selector
 from scrapy.http import Request
-from chique.scrapy.items import ProductLink
+from chique.scrapy.items import ProductLink,ProductLinkResult
 from chique.utils.crawlhelper import *
 from chique.scrapy.redis_spider import RedisSpider
 
@@ -54,11 +54,15 @@ class JDLinkSpider(RedisSpider):
         return result
 
     def parse_list(self, response):
-        result = []
+        #result = []
         hxs = Selector(response)
         item_urls = hxs.xpath(self._xpath_item_url).extract()
         for item in item_urls:
             item_url = self.domain + item if self.domain not in item else item
+            jsresult = ProductLinkResult()
+            jsresult['status'] = 'success'
+            jsresult['url'] = response.url
+            jsresult['timestamp'] = now()
             i = ProductLink()
             i['link_hash'] = convert2md5(item_url)
             i['link_level'] = '1'
@@ -78,5 +82,7 @@ class JDLinkSpider(RedisSpider):
             i['cookies'] = str(self.cookies['cookies'])
             i['headers'] = ''
             i['postdata'] = ''
-            result.append(i)
-            yield i
+
+            jsresult['result'] = i
+            #result.append(i)
+            yield jsresult

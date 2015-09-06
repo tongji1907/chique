@@ -68,7 +68,8 @@ SCHEDULER_QUEUE_CLASS = "chique.scrapy.queue.SpiderQueue"
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'chique.scrapy.mysql_pipelines.MySQLPipeline': 300,
+#    'chique.scrapy.mysql_pipelines.MySQLPipeline': 300,
+    'chique.scrapy.kafka_pipelines.KafkaPipeline':300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

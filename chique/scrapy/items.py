@@ -7,6 +7,8 @@
 
 import scrapy
 
+
+
 class ProductLink(scrapy.Item):
     # link base data structure
     link_hash = scrapy.Field()
@@ -29,6 +31,11 @@ class ProductLink(scrapy.Item):
     postdata = scrapy.Field()
 
 
+class ProductLinkResult(scrapy.Item):
+    status = scrapy.Field()
+    url = scrapy.Field()
+    timestamp = scrapy.Field()
+    result = scrapy.Field()
 
 class ProductDetail(scrapy.Item):
     # product detail data structure
