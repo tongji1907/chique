@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f03fd9fd-0b62-480a-9da2-ca10a3a9a9da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chique/scrapy/items.py" afterPath="$PROJECT_DIR$/chique/scrapy/items.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chique/spiders/jd/jingdong_link.py" afterPath="$PROJECT_DIR$/chique/spiders/jd/jingdong_link.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chique/scrapy/kafka_pipelines.py" afterPath="$PROJECT_DIR$/chique/scrapy/kafka_pipelines.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chique/command/settings.py" afterPath="$PROJECT_DIR$/chique/command/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_avro_json.py" afterPath="$PROJECT_DIR$/test/test_avro_json.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lc.iws" />
@@ -47,8 +42,8 @@
       <file leaf-file-name="crawl_server.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chique/command/crawl_server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38732395" vertical-offset="0" max-vertical-offset="480">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.14084508" vertical-offset="0" max-vertical-offset="480">
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -760,7 +755,13 @@
       <option name="project" value="LOCAL" />
       <updated>1441361621212</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add new spider">
+      <created>1441550731585</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1441550731585</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1314,8 +1315,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chique/command/crawl_server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38732395" vertical-offset="0" max-vertical-offset="480">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.14084508" vertical-offset="0" max-vertical-offset="480">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="14" />
           <folding />
         </state>
       </provider>
