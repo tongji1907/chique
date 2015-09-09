@@ -2,8 +2,9 @@ from scrapy import Spider, signals
 from scrapy.exceptions import DontCloseSpider
 from scrapy.exceptions import CloseSpider
 from scrapy.http.request import Request
+from chique.utils.connection_factory import ConnectionFactory
 import pickle
-import  redis
+import redis
 
 
 
@@ -18,7 +19,8 @@ class RedisMixin(object):
         if not self.redis_key:
             self.redis_key = '%s:start_urls' % self.name
 
-        self.server = redis.Redis('120.25.216.93','6379')
+        settings = self.crawler.settings
+        self.server = ConnectionFactory().create_redis_connection(settings)
         # idle signal is called when the spider has no requests left,
         # that's when we will schedule new requests from redis queue
         self.crawler.signals.connect(self.spider_idle, signal=signals.spider_idle)

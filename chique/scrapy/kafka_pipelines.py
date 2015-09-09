@@ -3,18 +3,20 @@ from kafka.client import KafkaClient
 from kafka.producer import SimpleProducer
 from kafka.consumer import SimpleConsumer
 from avro_json_serializer import *
-
-
 from chique.scrapy.avro.schema import *
-
-
+from chique.utils.connection_factory import ConnectionFactory
 import json
 import jsonpickle
 
 class KafkaPipeline(object):
 
     def __init__(self):
-        self.client  = KafkaClient("120.25.216.93:9092")
+        self.client  = ConnectionFactory().create_kafka_connection(self.settings)
+
+    @classmethod
+    def from_settings(cls, settings):
+        cls.settings = settings
+        return cls()
 
     def process_item(self, item, spider):
         if 'link' in spider.name:
